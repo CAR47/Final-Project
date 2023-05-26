@@ -1,15 +1,33 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import { BrowserRouter , Routes , Route } from 'react-router-dom';
 import reportWebVitals from './reportWebVitals';
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "../node_modules/bootstrap/dist/js/bootstrap.bundle.js";
+import NavBar from './Component/NavBar';
+import Footer from './Component/Footer';
+import Login from './Pages/Login';
+import About from './Pages/About';
+import HomePage from './Pages/homepage';
+// import SignUP from './Pages/Signup';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+    <div>
+      <NavBar />
+      <Routes>
+      <Route path="/login" element={<Login />} />
+      {/* <Route path="/signup" element={<SignUP />} /> */}
+      <Route path="/about" element={<About />} />
+      <Route path="/" element={<HomePage />} />
+      </Routes>
+      <Footer />
+    </div>
+    </BrowserRouter>
   </React.StrictMode>
 );
 
