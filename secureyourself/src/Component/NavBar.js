@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import DropdownMenu from 'react-bootstrap/esm/DropdownMenu';
 import { Link } from 'react-router-dom';
 
 export default function NavBar() {
@@ -27,7 +28,16 @@ export default function NavBar() {
                 <a className="nav-link" href="/about">About</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/contact">Contact</a>
+              <DropdownMenu id="dropdown-basic-button" title="Menu">
+                <Link className="dropdown-item" to="/register">Register</Link>
+                <Link className="dropdown-item" to="/login">Login</Link>
+                <Link className="dropdown-item" to="/logout">Logout</Link>
+                <Link className="dropdown-item" to="/chat">Chat</Link>
+                <Link className="dropdown-item" to="/profile">Profile</Link>
+              </DropdownMenu>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="/chat">Chat</a>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="/login">Login</a>
