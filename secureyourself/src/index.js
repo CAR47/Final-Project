@@ -10,6 +10,7 @@ import Footer from './Component/Footer';
 import Login from './Pages/Login';
 import About from './Pages/About';
 import HomePage from './Pages/homepage';
+import Contact from './Pages/Contact.jsx';
 // import SignUP from './Pages/Signup';
 
 
@@ -23,6 +24,7 @@ root.render(
       <Route path="/login" element={<Login />} />
       {/* <Route path="/signup" element={<SignUP />} /> */}
       <Route path="/about" element={<About />} />
+      <Route path="/contact" element={<Contact />} />
       <Route path="/" element={<HomePage />} />
       </Routes>
       <Footer />
