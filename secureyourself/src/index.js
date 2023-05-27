@@ -11,6 +11,7 @@ import Login from './Pages/Login';
 import About from './Pages/About';
 import HomePage from './Pages/homepage';
 import Contact from './Pages/Contact.jsx';
+import './Style/style.css'
 // import SignUP from './Pages/Signup';
 
 

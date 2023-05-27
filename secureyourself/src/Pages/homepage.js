@@ -24,9 +24,9 @@ const HomePage = () => {
             What is a Computer Virus and How Can I Protect My Computer?
           </h1>
         </div>
-      </div>
+      </div><br/><br/>
     <Container>
-      <h1>Computer Virus Details</h1>
+      <h1>Computer Virus Details</h1><br/><br/>
       <Row>
         {virusData.map((virus, index) => (
           <Col key={index} xs={12} md={6} lg={4}>
