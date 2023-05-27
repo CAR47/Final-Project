@@ -63,6 +63,7 @@ export default function HomePage() {
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
                 />
+                {/* test */}
                 <button className="btn btn-dark" type="submit">
                   Search
                 </button>
