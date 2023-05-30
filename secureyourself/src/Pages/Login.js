@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import '../Style/style.css';
 
 export default function Login() {
   const [email, setEmail] = useState('');
@@ -11,10 +12,11 @@ export default function Login() {
   };
 
   return (
-    <div className="container d-flex align-items-center justify-content-center vh-100">
-      <div className="card p-4 w-50">
+    <div className="Login">
+    <div className="container d-flex align-items-center justify-content-center vh-100 ">
+      <div className="card p-4 w-50 bg-success p-5 text-dark bg-opacity-10">
         <h2 className="mb-8 text-center">Login</h2>
-        <form className="w-100" onSubmit={handleSubmit}>
+        <form className="w-100 " onSubmit={handleSubmit}>
           <div className="form-group mb-4">
             <label htmlFor="email">Email:</label>
             <input
@@ -48,6 +50,7 @@ export default function Login() {
           </div>
         </form>
       </div>
+    </div>
     </div>
   );
 }

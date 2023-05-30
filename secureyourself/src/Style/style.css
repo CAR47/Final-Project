@@ -1,10 +1,41 @@
 p {
-    font-size: large;
-    line-height: 30px;
-  }
+  font-size: large;
+  line-height: 30px;
+}
 
-  .homeBg{
-    background: url(../Images/Homebg.png) center no-repeat;
-    background-size: cover;
-    color: white;
-  }
+.text-white {
+  color: white;
+}
+
+
+.homeBg {
+  background: url(../Images/Homebg.png) center no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+.footerBg {
+  background: url(../Images/footer-bg.jpg) center no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+.Login {
+  background: url(../Images/Login.png) center no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+.contact {
+  background: url(../Images/contact.png) center no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+.visible {
+  visibility: visible !important;
+}
+
+.invisible {
+  visibility: hidden !important;
+}

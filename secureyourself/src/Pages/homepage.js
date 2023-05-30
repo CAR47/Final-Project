@@ -1,6 +1,5 @@
 import React from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
-import Homebg from '../Images/Homebg.png';
 import '../Style/style.css';
 
 const HomePage = () => {
@@ -29,7 +28,7 @@ const HomePage = () => {
   ];
 
   return (
-    <div>
+    <div className="homeBg">
       <div className="banner bg-primary text-white py-5">
         <div className="container">
           <h1 className="display-4">
@@ -38,7 +37,7 @@ const HomePage = () => {
         </div>
       </div><br /><br />
       <Container >
-        <div className="homeBg">
+        <div >
           <h1>What is a computer virus?</h1><br/>
           <p>A computer virus is a malicious piece of computer code designed to spread from device to device. A subset of malware, these self-copying threats are usually designed to damage a device or steal data.</p>
           <p>     Think of a biological virus – the kind that makes you sick. It’s persistently nasty, keeps you from functioning normally, and often requires something powerful to get rid of it. A computer virus is very similar. Designed to replicate relentlessly, computer viruses infect your programs and files, alter the way your computer operates or stop it from working altogether.</p>

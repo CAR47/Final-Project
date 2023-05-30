@@ -1,8 +1,9 @@
 import React from 'react';
+import '../Style/style.css';
 
 const Footer = () => {
   return (
-    <footer className="text-center text-lg-start bg-light text-muted">
+    <footer className="text-center text-lg-start bg-light text-muted footerBg">
       {/* Section: Social media */}
       <section className="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
         {/* Left */}

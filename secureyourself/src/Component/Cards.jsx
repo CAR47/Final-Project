@@ -2,7 +2,6 @@
 
 function Cards(props) {
     return (
-        <>
             <div className="col-md-4 d-flex">
                 <div className="card my-4" style={{ width: "18rem" }}>
                     <img src={props.img} className="card-img-top" alt="..." />
@@ -12,7 +11,6 @@ function Cards(props) {
                     </div>
                 </div>
             </div>
-        </>
     );
 }
 export default Cards;

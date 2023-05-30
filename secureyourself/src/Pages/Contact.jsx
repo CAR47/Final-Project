@@ -1,4 +1,4 @@
-
+import '../Style/style.css';
 import { Form, Field, Formik } from 'formik';
 import { object, string } from 'yup';
 
@@ -20,14 +20,15 @@ export default function Contact() {
   const handleSubmit = (value) => { console.log(value) }
 
   return (
-    <>
+    <div className='contact'>
+
       <Formik initialValues={initValue} validationSchema={messageSchema} onSubmit={handleSubmit}>
-        <div className='container d-flex align-items-center justify-content-center vh-100'>
-          <div className='card p-4 w-50 my-3 mx-auto' style={{ width: '600px' }}>
-            <h2 className="mb-8 text-center">Contact us</h2>
+        <div className='container d-flex align-items-center justify-content-center vh-100 '>
+          <div className='card p-4 w-50 my-3 mx-auto bg-success p-5 text-dark bg-opacity-10 text-white' style={{ width: '600px' }}>
+            <h2 className="mb-8 text-center ">Contact us</h2>
             <Form onSubmit={handleSubmit} >
               <div className="mb-3">
-                <label htmlFor="name" className="form-label">Username</label>
+              <label htmlFor="name" className="form-label ">Username</label>
                 <input name="username" type="text" className="form-control" id="name" placeholder='Enter name' />
 
                 <div style={{ color: 'red' }}>{ }</div>
@@ -50,6 +51,6 @@ export default function Contact() {
           </div>
         </div>
       </Formik>
-    </>
+    </div>
   );
 }
