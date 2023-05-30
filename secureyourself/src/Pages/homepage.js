@@ -1,5 +1,7 @@
 import React from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
+import Homebg from '../Images/Homebg.png';
+import '../Style/style.css';
 
 const HomePage = () => {
   const virusData = [
@@ -28,30 +30,148 @@ const HomePage = () => {
 
   return (
     <div>
-    <div className="banner bg-primary text-white py-5">
+      <div className="banner bg-primary text-white py-5">
         <div className="container">
           <h1 className="display-4">
             What is a Computer Virus and How Can I Protect My Computer?
           </h1>
         </div>
-      </div><br/><br/>
-    <Container>
-      <h1>Computer Virus Details</h1><br/><br/>
-      <Row>
-        {virusData.map((virus, index) => (
-          <Col key={index} xs={12} md={6} lg={4}>
-            <Card className="mb-4">
-              <Card.Img variant="top" src={virus.image} alt={virus.name} />
-              <Card.Body>
-                <Card.Title>{virus.name}</Card.Title>
-                <Card.Text>{virus.description}</Card.Text>
-                <a href={`/virus/${virus.name}`} className="btn btn-primary">Learn More</a>
-              </Card.Body>
-            </Card>
-          </Col>
-        ))}
-      </Row>
-    </Container>
+      </div><br /><br />
+      <Container >
+        <div className="homeBg">
+          <h1>What is a computer virus?</h1><br/>
+          <p>A computer virus is a malicious piece of computer code designed to spread from device to device. A subset of malware, these self-copying threats are usually designed to damage a device or steal data.</p>
+          <p>     Think of a biological virus – the kind that makes you sick. It’s persistently nasty, keeps you from functioning normally, and often requires something powerful to get rid of it. A computer virus is very similar. Designed to replicate relentlessly, computer viruses infect your programs and files, alter the way your computer operates or stop it from working altogether.</p>
+          <h1>What does a computer virus do?</h1><br/>
+          <p>
+            Some computer viruses are programmed to harm your computer by damaging programs, deleting files, or reformatting the hard drive. Others simply replicate themselves or flood a network with traffic, making it impossible to perform any internet activity. Even less harmful computer viruses can significantly disrupt your system’s performance, sapping computer memory and causing frequent computer crashes.
+          </p>
+          <p>
+            In 2013, the botnet virus Gameover ZueS was discovered to use peer-to-peer downloading sites to distribute ransomware and commit banking fraud. While tens of thousands of computer viruses still roam the internet, they have diversified their methods and are now joined by a number of malware variants like worms, Trojans, and ransomware.
+          </p>
+          <h1>
+            How does a computer get a virus?
+          </h1><br/>
+          <p>
+            Even if you’re careful, you can pick up computer viruses through normal Web activities like:
+            <ul>
+              <li>Sharing music, files, or photos with other users</li>
+              <li>Visiting an infected website</li>
+              <li>Opening spam email or an email attachment</li>
+              <li>Downloading free games, toolbars, media players and other system utilities</li>
+              <li>Installing mainstream software applications without thoroughly reading license agreements</li>
+            </ul>
+          </p>
+          <h1>
+            How do computer viruses spread?
+          </h1><br/>
+          <p>
+            Viruses can be spread several ways, including via networks, discs, email attachments or external storage devices like USB sticks. Since connections between devices were once far more limited than today, early computer viruses were commonly spread through infected floppy disks.
+          </p>
+          <p>
+            Today, links between internet-enabled devices are for common, providing ample opportunities for viruses to spread. According to the U.S. Cybersecurity and Infrastructure Security Agency, infected email attachments are the most common means of circulating computer viruses. Most, but not all, computer viruses require a user to take some form of action, like enabling “macros” or clicking a link, to spread.
+          </p>
+          <h1>
+            What are the symptoms of a computer virus?
+          </h1><br/>
+          <p>
+            Your computer may be infected if you recognize any of these malware symptoms:
+            <ul>
+              <li>
+                Slow computer performance
+              </li>
+              <li>
+                Erratic computer behavior
+              </li>
+              <li>
+                Unexplained data loss
+              </li>
+              <li>
+                Frequent computer crashes
+              </li>
+            </ul>
+          </p>
+          <h1>
+            How are computer viruses removed?
+          </h1><br/>
+          <p>
+            Antiviruses have made great progress in being able to identify and prevent the spread of computer viruses. When a device does become infected, though, installing an antivirus solution is still your best bet for removing it. Once installed, most software will conduct a “scan” for the malicious program. Once located, the antivirus will present options for its removal. If this is not something that can be done automatically, some security vendors offer a technician’s assistance in removing the virus free of charge.
+          </p>
+          <h1>
+            Examples of computer viruses
+          </h1><br/>
+          <p>
+            In 2013, the botnet virus Gameover ZueS was discovered to use peer-to-peer downloading sites to distribute ransomware and commit banking fraud. While tens of thousands of computer viruses still roam the internet, they have diversified their methods and are now joined by several malware variants like:
+            <ul>
+              <li>
+                Worms - A worm is a type of virus that, unlike traditional viruses, usually does not require the action of a user to spread from device to device.
+              </li>
+              <li>
+              Trojans - As in the myth, a Trojan is a virus that hides within a legitimate-seeming program to spread itself across networks or devices.
+              </li>
+              <li>
+              Ransomware - Ransomware is a type of malware that encrypts a user’s files and demands a ransom for its return. Ransomware can be, but isn’t necessarily, spread through computer viruses.
+              </li>
+            </ul>
+          </p>
+          <h1>
+          Computer virus protection
+          </h1><br/>
+          <p>
+          When you arm yourself with information and resources, you’re wiser about computer security threats and less vulnerable to threat tactics. Take these steps to safeguard your PC with the best computer virus protection: 
+          <ul>
+            <li>
+            Use antivirus protection and a firewall
+            </li>
+            <li>
+            Get antispyware software
+            </li>
+            <li>
+            Always keep your antivirus protection and antispyware software up-to-date
+            </li>
+            <li>
+            Increase your browser security settings
+            </li>
+            <li>
+            Avoid questionable Websites
+            </li>
+            <li>
+            Only download software from sites you trust.
+            </li>
+            <li>
+            Carefully evaluate free software and file-sharing applications before downloading them. 
+            </li>
+            <li>
+            Don't open messages from unknown senders
+            </li>
+            <li>
+            Immediately delete messages you suspect to be spam
+            </li>
+          </ul>
+          An unprotected computer is like an open door for computer viruses. Firewalls monitor Internet traffic in and out of your computer and hide your PC from online scammers looking for easy targets. Products like Webroot Internet Security Complete and Webroot Antivirus provide complete protection from the two most dangerous threats on the Internet – spyware and computer viruses. They prevent viruses from entering your computer, stand guard at every possible entrance of your computer and fend off any computer virus that tries to open, even the most damaging and devious strains.  
+          </p>
+          <p>
+          While free antivirus downloads are available, they just can't offer the computer virus help you need to keep up with the continuous onslaught of new strains. Previously undetected forms of polymorphic malware can often do the most damage, so it’s critical to have up-to-the-minute, guaranteed antivirus protection.
+          </p>
+        </div>
+      </Container>
+      <Container>
+        <h1>Computer Virus Details</h1><br /><br />
+        <Row>
+          {virusData.map((virus, index) => (
+            <Col key={index} xs={12} md={6} lg={4}>
+              <Card className="mb-4">
+                <Card.Img variant="top" src={virus.image} alt={virus.name} />
+                <Card.Body>
+                  <Card.Title>{virus.name}</Card.Title>
+                  <Card.Text>{virus.description}</Card.Text>
+                  <a href={`/virus/${virus.name}`} className="btn btn-primary">Learn More</a>
+                </Card.Body>
+              </Card>
+            </Col>
+          ))}
+        </Row>
+      </Container>
     </div>
   );
 };

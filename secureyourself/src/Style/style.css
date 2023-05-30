@@ -2,3 +2,9 @@ p {
     font-size: large;
     line-height: 30px;
   }
+
+  .homeBg{
+    background: url(../Images/Homebg.png) center no-repeat;
+    background-size: cover;
+    color: white;
+  }

@@ -9,11 +9,11 @@ import img from '../Images/course-graphql.jpg';
 const About = () => {
 
   const profiles = [
-    { name: "Muhammad Hassaan Tahir", info: "MERN Stack Developer", imag: {iHassaan} },
-    { name: "Ashfaq Ramzan", info: "MERN Stack Developer", imag: {iAshfaq} },
-    { name: "Abdul Hanan", info: "MERN Stack Developer", imag: {img} },
-    { name: "Mudassir Nazar", info: "MERN Stack Developer", imag: {iMudassar} },
-    { name: "Muhammad Adnan", info: "MERN Stack Developer", imag: {img} },
+    { name: "Muhammad Hassaan Tahir", info: "MERN Stack Developer", imag: iHassaan },
+    { name: "Ashfaq Ramzan", info: "MERN Stack Developer", imag: iAshfaq },
+    { name: "Abdul Hanan", info: "MERN Stack Developer", imag: img },
+    { name: "Mudassir Nazar", info: "MERN Stack Developer", imag: iMudassar },
+    { name: "Muhammad Adnan", info: "MERN Stack Developer", imag: img },
 ]
 
   return (
@@ -33,7 +33,7 @@ const About = () => {
         <div className='row'>
           {
             profiles.map((profile) => {
-              return <Cards name={profile.name} info={profile.info} img={iHassaan}/>
+              return <Cards name={profile.name} info={profile.info} img={profile.imag}/>
             })
           }
         </div>

@@ -48,7 +48,7 @@ const Footer = () => {
                 <i className="fas fa-gem me-3"></i>Secure Yourself
               </h6>
               <p>
-                You can follow us on:
+                Let us help you.
               </p>
             </div>
             {/* Grid column */}
@@ -57,18 +57,9 @@ const Footer = () => {
             <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
               {/* Links */}
               <h6 className="text-uppercase fw-bold mb-4">Social Media</h6>
-              {/* <p>
-                <a href="#!" className="text-reset">Angular</a>
-              </p>
               <p>
-                <a href="#!" className="text-reset">React</a>
+                <a href="www.youtube.com" className="text-reset">Youtube</a>
               </p>
-              <p>
-                <a href="#!" className="text-reset">Vue</a>
-              </p>
-              <p>
-                <a href="#!" className="text-reset">Laravel</a>
-              </p> */}
             </div>
             {/* Grid column */}
 

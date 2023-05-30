@@ -25,9 +25,6 @@ export default function NavBar() {
                 <a className="nav-link" href="/">Home</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/about">About</a>
-              </li>
-              <li className="nav-item">
               {/* <DropdownMenu id="dropdown-basic-button" title="Menu">
                 <Link className="dropdown-item" to="/register">Register</Link>
                 <Link className="dropdown-item" to="/login">Login</Link>
@@ -44,6 +41,12 @@ export default function NavBar() {
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="/signup">SignUp</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="/contact">Contact</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="/about">About</a>
               </li>
               <li class="list-item">
                 <form className="d-flex" onSubmit={handleSearch}>
