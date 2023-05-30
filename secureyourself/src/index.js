@@ -9,7 +9,9 @@ import NavBar from './Component/NavBar';
 import Footer from './Component/Footer';
 import Login from './Pages/Login';
 import About from './Pages/About';
+import Chat from './Pages/Chat';
 import HomePage from './Pages/homepage';
+import SignUP from './Pages/Signup';
 import Contact from './Pages/Contact.jsx';
 import './Style/style.css'
 // import SignUP from './Pages/Signup';
@@ -23,9 +25,10 @@ root.render(
       <NavBar />
       <Routes>
       <Route path="/login" element={<Login />} />
-      {/* <Route path="/signup" element={<SignUP />} /> */}
+      <Route path="/signup" element={<SignUP />} />
       <Route path="/about" element={<About />} />
       <Route path="/contact" element={<Contact />} />
+      <Route path="/chat" element={<Chat />} />
       <Route path="/" element={<HomePage />} />
       </Routes>
       <Footer />

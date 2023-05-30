@@ -1,12 +1,12 @@
 import React from 'react';
 import userSchema from '../Scema/validation';
-import { Form, Field, Formik, ErrorMessage } from "formik";
+import { Form, Field, Formik, ErrorMessage } from 'Formik'
 
 export default function SignUP() {
   const initialData = {
     Name: "", 
     Email: "", 
-    Password: ""
+    Password: "",
   };
 
 const HandleSubmit = (values, { resetForm }) => {

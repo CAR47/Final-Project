@@ -1,6 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 export default function HomePage() {
+  const [searchQuery, setSearchQuery] = useState('');
+
+  const handleSearch = (e) => {
+    e.preventDefault();
+    // Handle search functionality
+  };
+
   return (
     <div>
       {/* Navigation Bar */}
@@ -48,26 +55,28 @@ export default function HomePage() {
               ligula finibus consectetur.
             </p>
             {/* Add more content as per your requirements */}
+
+            {/* Search Form */}
+            <form className="d-flex" onSubmit={handleSearch}>
+              <input
+                className="form-control me-2 alert-dark"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+              />
+                {/* test */}
+              <button className="btn btn-dark" type="submit">
+                Search
+              </button>
+            </form>
           </div>
           <div className="col-md-4">
             {/* Sidebar content, if any */}
           </div>
         </div>
       </div>
-      <form className="d-flex" onSubmit={handleSearch}>
-                <input
-                  className="form-control me-2 alert-dark"
-                  type="search"
-                  placeholder="Search"
-                  aria-label="Search"
-                  value={searchQuery}
-                  onChange={(e) => setSearchQuery(e.target.value)}
-                />
-                {/* test */}
-                <button className="btn btn-dark" type="submit">
-                  Search
-                </button>
-              </form>
 
       {/* Footer */}
       <footer className="bg-dark text-white py-3">
