@@ -11,7 +11,7 @@ import Login from './Pages/Login';
 import About from './Pages/About';
 import Chat from './Pages/Chat';
 import HomePage from './Pages/homepage';
-// import SignUP from './Pages/Signup';
+import SignUP from './Pages/Signup';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -22,7 +22,7 @@ root.render(
       <NavBar />
       <Routes>
       <Route path="/login" element={<Login />} />
-      {/* <Route path="/signup" element={<SignUP />} /> */}
+      <Route path="/signup" element={<SignUP />} />
       <Route path="/about" element={<About />} />
       <Route path="/chat" element={<Chat />} />
       <Route path="/" element={<HomePage />} />

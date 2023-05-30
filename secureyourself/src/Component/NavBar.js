@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import DropdownMenu from 'react-bootstrap/esm/DropdownMenu';
-import { Link } from 'react-router-dom';
+// import DropdownMenu from 'react-bootstrap/esm/DropdownMenu';
+// import { Link } from 'react-router-dom';
 
 export default function NavBar() {
   const [searchQuery, setSearchQuery] = useState('');
@@ -28,19 +28,22 @@ export default function NavBar() {
                 <a className="nav-link" href="/about">About</a>
               </li>
               <li className="nav-item">
-              <DropdownMenu id="dropdown-basic-button" title="Menu">
+              {/* <DropdownMenu id="dropdown-basic-button" title="Menu">
                 <Link className="dropdown-item" to="/register">Register</Link>
                 <Link className="dropdown-item" to="/login">Login</Link>
                 <Link className="dropdown-item" to="/logout">Logout</Link>
                 <Link className="dropdown-item" to="/chat">Chat</Link>
                 <Link className="dropdown-item" to="/profile">Profile</Link>
-              </DropdownMenu>
+              </DropdownMenu> */}
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="/chat">Chat</a>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="/login">Login</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="/signup">SignUp</a>
               </li>
               <li class="list-item">
                 <form className="d-flex" onSubmit={handleSearch}>
