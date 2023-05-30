@@ -1,6 +1,8 @@
 import React from 'react';
 import userSchema from '../Scema/validation';
 import { Form, Field, Formik, ErrorMessage } from "formik";
+import { Formik, Form, Field, ErrorMessage } from 'formik';
+
 
 export default function SignUP() {
   const initialData = {
