@@ -1,5 +1,5 @@
 import '../Style/style.css';
-import { Form, Field, Formik } from 'formik';
+import { Form, Formik } from 'formik';
 import { object, string } from 'yup';
 
 

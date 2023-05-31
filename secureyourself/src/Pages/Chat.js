@@ -25,30 +25,34 @@ class Chat extends Component {
 
   render() {
     return (
-      <div className="d-flex justify-content-center">
+      <Container className="d-flex justify-content-center">
         <h1>Community Chat</h1>
-        <Form onSubmit={this.handleSend}>
-          <Row>
-            <Col>
-              <input
-                type="text"
-                name="message"
-                placeholder="Enter your message"
-                value={this.state.message}
-                onChange={(e) => this.setState({ message: e.target.value })}
-              />
-            </Col>
-            <Col>
-              <Button type="submit">Send</Button>
-            </Col>
-          </Row>
-        </Form>
-        <ul>
-          {this.state.messages.map((message) => (
-            <li key={message}>{message}</li>
-          ))}
-        </ul>
-      </div>
+        <Container className="message-container">
+          <ul>
+            {this.state.messages.map((message) => (
+              <li key={message}>{message}</li>
+            ))}
+          </ul>
+        </Container>
+        <Container className="input-container">
+          <Form onSubmit={this.handleSend}>
+            <Row>
+              <Col>
+                <input
+                  type="text"
+                  name="message"
+                  placeholder="Enter your message"
+                  value={this.state.message}
+                  onChange={(e) => this.setState({ message: e.target.value })}
+                />
+              </Col>
+              <Col>
+                <Button type="submit">Send</Button>
+              </Col>
+            </Row>
+          </Form>
+        </Container>
+      </Container>
     );
   }
 }
