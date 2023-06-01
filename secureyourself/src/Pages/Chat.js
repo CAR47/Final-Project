@@ -23,7 +23,7 @@ function Chat() {
       <Container>
         <Row>
           <Col>
-            <div className="message-container">
+            <div className="message-container" style={{ border: '1px solid black', minHeight: '200px', padding: '10px' }}>
               {messages.map((message, index) => (
                 <div key={index}>{message}</div>
               ))}
@@ -32,7 +32,7 @@ function Chat() {
         </Row>
       </Container>
       <Row>
-        <Col>
+        <Col><br />
           <Form onSubmit={handleMessageSubmit}>
             <Form.Group controlId="newMessage">
               <Form.Control
