@@ -164,7 +164,7 @@ const HomePage = () => {
                 <Card.Body>
                   <Card.Title>{virus.name}</Card.Title>
                   <Card.Text>{virus.description}</Card.Text>
-                  <a href={`/virus/${virus.name}`} className="btn btn-primary">Learn More</a>
+                  <a href={`/${virus.name}`} className="btn btn-primary">Learn More</a>
                 </Card.Body>
               </Card>
             </Col>

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import '../Style/style.css';
 
 export default function SignUP() {
@@ -15,6 +16,9 @@ export default function SignUP() {
 
   return (
     <div className="Login">
+        <Link to="/" className="btn btn-primary btn-dark m-4">
+          Back Page
+        </Link>
       <div className="container d-flex align-items-center justify-content-center vh-100">
         <div className="card p-4 w-50 bg-success p-5 text-dark bg-opacity-10">
           <h2 className="mb-8 text-center">Register</h2>
@@ -59,9 +63,9 @@ export default function SignUP() {
               />
             </div>
             <div className="text-center">
-              <button type="submit" className="btn btn-primary btn-dark m-4">
-                Register
-              </button>
+                <Link to="/" className="btn btn-primary btn-dark m-4">
+                  Register
+                </Link>
             </div>
           </form>
         </div>

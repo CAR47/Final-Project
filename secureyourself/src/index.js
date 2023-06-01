@@ -13,8 +13,12 @@ import Chat from './Pages/Chat';
 import HomePage from './Pages/homepage';
 import SignUP from './Pages/Signup';
 import Contact from './Pages/Contact.jsx';
+import RansomwareInfoPage from './Pages/Ransomware';
+import MalwareInfoPage from './Pages/Malware';
+import AdwareInfoPage from './Pages/Adware';
+import SpywareInfoPage from './Pages/Spyware';
 import './Style/style.css'
-// import SignUP from './Pages/Signup';
+
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -22,14 +26,20 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
     <div>
+      <Routes>
+      <Route path="/" element={<Login />} />
+      <Route path="/signup" element={<SignUP />} />
+      </Routes>
       <NavBar />
       <Routes>
-      <Route path="/login" element={<Login />} />
-      <Route path="/signup" element={<SignUP />} />
       <Route path="/about" element={<About />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/chat" element={<Chat />} />
-      <Route path="/" element={<HomePage />} />
+      <Route path="/Home" element={<HomePage />} />
+      <Route path="/Malware" element={<MalwareInfoPage />} />
+      <Route path="/Ransomware" element={<RansomwareInfoPage />} />
+      <Route path="/Adware" element={<AdwareInfoPage />} />
+      <Route path="/Spyware" element={<SpywareInfoPage />} />
       </Routes>
       <Footer />
     </div>

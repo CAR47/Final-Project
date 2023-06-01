@@ -22,7 +22,7 @@ export default function NavBar() {
           <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
             <ul className="navbar-nav ml-auto">
               <li className="nav-item">
-                <a className="nav-link" href="/">Home</a>
+                <a className="nav-link" href="/Home">Home</a>
               </li>
               <li className="nav-item">
               <DropdownMenu id="dropdown-basic-button" title="Menu">
@@ -37,11 +37,11 @@ export default function NavBar() {
                 <a className="nav-link" href="/chat">Chat</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/login">Login</a>
+                <a className="nav-link" href="/">Sign Out</a>
               </li>
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 <a className="nav-link" href="/signup">SignUp</a>
-              </li>
+              </li> */}
               <li className="nav-item">
                 <a className="nav-link" href="/contact">Contact</a>
               </li>
