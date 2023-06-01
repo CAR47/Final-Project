@@ -5,20 +5,21 @@ import iHassaan from '../Images/Hassaan.jpeg';
 import iAshfaq from '../Images/Ashfaq.jpeg';
 import iMudassar from '../Images/Mudassar.jpeg'
 import img from '../Images/course-graphql.jpg';
+import Adnan from '../Images/Muhammad-Adnan.jpg';
 
 const About = () => {
 
   const profiles = [
     { name: "Muhammad Hassaan Tahir", info: "MERN Stack Developer", imag: iHassaan },
     { name: "Ashfaq Ramzan", info: "MERN Stack Developer", imag: iAshfaq },
-    { name: "Abdul Hanan", info: "MERN Stack Developer", imag: img },
+    { name: "Muhammad Adnan", info: "MERN Stack Developer", imag: Adnan },
     { name: "Mudassir Nazar", info: "MERN Stack Developer", imag: iMudassar },
-    { name: "Muhammad Adnan", info: "MERN Stack Developer", imag: img },
+    { name: "Abdul Hanan", info: "MERN Stack Developer", imag: img },
 ]
 
   return (
-    <>
-      <div className="container mt-5">
+    <div className='About'>
+      <div className="container ">
         <h1 className="mb-4 aboutclass">About Us</h1><br/>
         <p>Welcome to " Secure Yourself ", your ultimate source for all things cyber security. We are dedicated to providing you with up-to-date information on security threats, highlighting the importance of safeguarding your digital assets, and showcasing the remarkable efforts of our team in creating this platform</p><br/>
         <p>In today's interconnected world, the digital landscape is constantly evolving, bringing both incredible opportunities and unprecedented risks. Our mission is to empower individuals and organizations with the knowledge and tools necessary to navigate this complex cyber environment securely.</p><br/>
@@ -38,7 +39,7 @@ const About = () => {
           }
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

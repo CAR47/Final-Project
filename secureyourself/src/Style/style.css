@@ -31,6 +31,10 @@ p {
   background-size: cover;
   color: white;
 }
+.About {
+  background: url(../Images/About-US.jpg) center no-repeat;
+  background-size: cover;
+}
 
 .visible {
   visibility: visible !important;
