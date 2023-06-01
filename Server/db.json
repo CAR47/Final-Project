@@ -1,3 +1,23 @@
-[{
-    
-}]
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Ashfaq Razman",
+      "email": "ashfaqr112@gmail.com",
+      "Password": "password"
+    },
+    {
+      "id": 2,
+      "name": "Test Test",
+      "email": "test123456@gmail.com",
+      "Password": "password"
+    },
+    {
+      "name": "Ashfaq Ramzan",
+      "email": "gameid0046@gmail.com",
+      "password": "2YHgmbb5cW7ZS@",
+      "id": 3
+    }
+  ],
+  "messages": []
+}
