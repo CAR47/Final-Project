@@ -1,8 +1,10 @@
 import React from 'react';
+import '../Style/style.css';
 import { Container, Row, Col } from 'react-bootstrap';
 
 const AdwareInfoPage = () => {
   return (
+    <div className='About'>
     <Container>
       <Row>
         <Col>
@@ -48,6 +50,7 @@ const AdwareInfoPage = () => {
         </Col>
       </Row>
     </Container>
+    </div>
   );
 };
 

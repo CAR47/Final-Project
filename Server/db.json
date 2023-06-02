@@ -17,6 +17,24 @@
       "email": "gameid0046@gmail.com",
       "password": "2YHgmbb5cW7ZS@",
       "id": 3
+    },
+    {
+      "name": "Ahsan",
+      "email": "ahsan4545@gmail",
+      "password": "123456789",
+      "id": 4
+    },
+    {
+      "name": "Hassan",
+      "email": "hassan@gmail.com",
+      "password": "123456789",
+      "id": 5
+    },
+    {
+      "name": "Saqlain",
+      "email": "saqlain@gmail.com",
+      "password": "pakistan",
+      "id": 6
     }
   ],
   "messages": []
